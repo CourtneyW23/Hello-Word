@@ -1,9 +1,44 @@
 .container {
   text-align: center;
+   margin: auto;
 }
 
 h1 {
-  color: blue;
+  color: #0061ff;
   font-family: verdana;
-  font-size: 300%;
+  font-size: 200%;
+}
+
+.item1 { grid-area: A; }
+.item2 { grid-area: B; }
+.item3 { grid-area: C; }
+.item4 { grid-area: D; }
+
+.item1 {
+  grid-area: 1 / 1 / span 1/ span 2;
+}
+.item2 {
+  grid-area: 2 / 1 / span 1/ span 1;
+}
+.item3 {
+  grid-area: 2 / 2 / span 1/ span 1;
+}
+.item4 {
+  grid-area: 3 / 1 / span 1/ span 2;
+}
+
+/*main grid*/
+.grid-container {
+  display: grid;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+/*items inside of the grid*/
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
 }
